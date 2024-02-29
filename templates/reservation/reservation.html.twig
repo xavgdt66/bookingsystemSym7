@@ -1,0 +1,14 @@
+{# templates/reservation/reservation.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Réservation{% endblock %}
+
+{% block body %}
+    <h1>Réservation</h1>
+    {{ form_start(form) }}
+    {{ form_row(form.startDate) }}
+    {{ form_row(form.endDate) }}
+    {{ form_row(form.numberOfPeople) }}
+    {{ form_end(form) }}
+{% endblock %}
